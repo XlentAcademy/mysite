@@ -62,31 +62,31 @@
 </head>
 
 <body>
-    <!-- <nav class="nav">
-        <a href="/" class="nav__link" data-link>Dashboard</a>
-        <a href="/posts" class="nav__link" data-link>Posts</a>
-        <a href="/settings" class="nav__link" data-link>Settings</a>
-    </nav> -->
-    <header>
-        <a href="/" class="logo" data-link>Xlent</a>
-        <div class="menu-toggle"></div>
-        <nav>
-            <ul>
-                <li><a href="/" class="active" data-link>Home</a></li>
-                <li><a href="/posts" data-link>Posts</a></li>
-                <li><a href="/settings" data-link>Settings</a></li>
-            </ul>
-        </nav>
-        <div class="clearfix"></div>
-    </header>
-    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="header">
+        <h1>Xlent Academy</h1>
+        <p>Making your dreams true</p>
+    </div>
+
+    <div id="navbar">
+        <a class="active" href="/" data-link>Home</a>
+        <a href="/posts" data-link>Posts</a>
+        <a href="/settings" data-link>Settings</a>
+    </div>
     <script>
-        $(document).ready(function() {
-            $('.menu-toggle').click(function() {
-                $('.menu-toggle').toggleClass('active')
-                $('nav').toggleClass('active')
-            })
-        })
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
     </script>
     <br /><br /><br /><br /><br /><br /><br /><br />
     <div id="app"></div>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xlent Academy</title>
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="icon" href="/static/favicon.png" type="image/icon" sizes="16x16" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <style>
+        .mt {
+            text-align: center;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        .maintitle {
+            display: inline-block;
+            font-family: 'Bebas Neue';
+            color: #fcfcfc;
+            background-color: #293250;
+            font-size: 60px;
+            padding: 25px;
+            border-radius: 21px;
+        }
+        
+        .maintitle span {
+            color: #069370;
+            text-decoration: underline;
+        }
+        
+        .vid {
+            text-align: center;
+        }
+        
+        hr {
+            background-color: #30110D;
+            color: #30110D;
+            width: 700px;
+            height: 20px;
+            border-radius: 10px;
+        }
+        
+        embed {
+            border-radius: 10px;
+            width: 520px;
+            height: 250px;
+        }
+        
+        @media (max-width: 768px) {
+            embed {
+                width: auto;
+                height: auto;
+            }
+            hr {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav class="nav">
+        <a href="/" class="nav__link" data-link>Dashboard</a>
+        <a href="/posts" class="nav__link" data-link>Posts</a>
+        <a href="/settings" class="nav__link" data-link>Settings</a>
+    </nav> -->
+    <div id="app">
+        <header>
+            <a href="/" class="logo" data-link>Xlent</a>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="/" class="active" data-link>Home</a></li>
+                    <li><a href="/posts" data-link>Posts</a></li>
+                    <li><a href="/settings" data-link>Settings</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <script type="module" src="/static/js/index.js"></script>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>We offer training and skill building courses across Technology, Design, Management, Science and Humanities. We polish your skills.</p>
+                <ul class="sci">
+                    <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCKvyE97sMfMbkqoEOhk7nhA" target="_blank" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick&nbsp;Links</h2>
+                <ul>
+                    <li><a href="https://xlentacademy.blogspot.com/p/about-us.html">About</a></li>
+                    <li><a href="https://xlentacademy.blogspot.com/" target="_blank">Blogs</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="https://xlentacademy.blogspot.com/p/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="https://xlentacademy.blogspot.com/p/dmca.html">Help</a></li>
+                    <li><a href="https://xlentacademy.blogspot.com/p/contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>68 - Sandipani colony,<br>Plt. No. A Nimzari naka,<br>Shirpur - 425405</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="tel:+918668367103">+91 866 836 7103</a><br>
+                            <a href="tel:+919890985962">+91 989 095 8962</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:xlentclass@gmail.com">xlentclass@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright &copy; 2021-22 Xlent Academy. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

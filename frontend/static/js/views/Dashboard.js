@@ -8,27 +8,6 @@ export default class extends AbstractView {
 
     async getHtml() {
         return `
-        <script>
-            $(document).ready(function() {
-                $('.menu-toggle').click(function() {
-                    $('.menu-toggle').toggleClass('active')
-                    $('nav').toggleClass('active')
-                })
-            })
-        </script>
-        <header>
-        <a href="/" class="logo" data-link>Xlent</a>
-        <div class="menu-toggle"></div>
-        <nav>
-            <ul>
-                <li><a href="/" class="active" data-link>Home</a></li>
-                <li><a href="/posts" data-link>Posts</a></li>
-                <li><a href="/settings" data-link>Settings</a></li>
-            </ul>
-        </nav>
-        <div class="clearfix"></div>
-    </header>
-    <br /><br /><br /><br /><br /><br /><br /><br />
     <div class="maintext">
         <h1>Welcome to world of Knowledge</h1>
         <p>The purpose of this website is to share knowledege with anyone, anytime, anybody. As the websites are availabe 24 hours we have no limit of time to

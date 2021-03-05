@@ -67,29 +67,29 @@
         <a href="/posts" class="nav__link" data-link>Posts</a>
         <a href="/settings" class="nav__link" data-link>Settings</a>
     </nav> -->
-    <div id="app">
-        <header>
-            <a href="/" class="logo" data-link>Xlent</a>
-            <div class="menu-toggle"></div>
-            <nav>
-                <ul>
-                    <li><a href="/" class="active" data-link>Home</a></li>
-                    <li><a href="/posts" data-link>Posts</a></li>
-                    <li><a href="/settings" data-link>Settings</a></li>
-                </ul>
-            </nav>
-            <div class="clearfix"></div>
-        </header>
-        <br /><br /><br /><br /><br /><br /><br /><br />
-        <script>
-            $(document).ready(function() {
-                $('.menu-toggle').click(function() {
-                    $('.menu-toggle').toggleClass('active')
-                    $('nav').toggleClass('active')
-                })
+    <header>
+        <a href="/" class="logo" data-link>Xlent</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="/" class="active" data-link>Home</a></li>
+                <li><a href="/posts" data-link>Posts</a></li>
+                <li><a href="/settings" data-link>Settings</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
             })
-        </script>
-    </div>
+        })
+    </script>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div id="app"></div>
     <script type="module" src="/static/js/index.js"></script>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <footer>

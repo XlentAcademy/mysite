@@ -10,6 +10,14 @@ export default class extends AbstractView {
     async getHtml() {
         if (this.postId == 1) {
             return `
+            <script>
+            $(document).ready(function() {
+                $('.menu-toggle').click(function() {
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
             <header>
             <a href="/" class="logo" data-link>Xlent</a>
             <div class="menu-toggle"></div>

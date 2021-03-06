@@ -17,6 +17,8 @@
         
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         .maintitle {
+            transition: background 0.25s;
+            cursor: pointer;
             display: inline-block;
             font-family: 'Bebas Neue';
             color: #fcfcfc;
@@ -27,8 +29,13 @@
         }
         
         .maintitle span {
+            letter-spacing: 2px;
             color: #069370;
             text-decoration: underline;
+        }
+        
+        .maintitle:hover {
+            background-color: #2a2950;
         }
         
         .vid {
@@ -43,14 +50,14 @@
             border-radius: 10px;
         }
         
-        embed {
-            border-radius: 10px;
+        iframe {
             width: 520px;
             height: 250px;
+            border-radius: 10px;
         }
         
         @media (max-width: 768px) {
-            embed {
+            iframe {
                 width: auto;
                 height: auto;
             }
@@ -58,6 +65,29 @@
                 width: 200px;
             }
         }
+        
+        .clickvid {
+            text-decoration: none;
+            transition: background 0.25s;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'Bebas Neue';
+            color: #143D59;
+            letter-spacing: 3px;
+            background-color: #F4B41A;
+            font-size: 35px;
+            padding: 35px;
+            border-radius: 10px;
+        }
+        
+        .clickvid:active {
+            background-color: #ffbf00;
+        }
+        
+        .clivid {
+            text-align: center;
+        }
+        /*Loader*/
         
         .loader {
             position: fixed;

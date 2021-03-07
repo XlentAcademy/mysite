@@ -137,6 +137,11 @@ html {
     font-size: 25px;
 }
 
+.maintext object p {
+    color: grey;
+    font-size: 20px;
+}
+
 .posts {
     /* border: none; */
     border-top: 8px solid #4CAF50;

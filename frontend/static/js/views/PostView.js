@@ -13,7 +13,7 @@ export default class extends AbstractView {
         <div class="maintext">
             <h1>Posts</h1>
             <p>Welcome to Xlent Academy!</p>
-            <iframe class="posts" src="https://xlentacademy.tk" width="100%" height="400px" data-link></iframe>
+            <iframe class="posts" src="https://xlentacademy.tk" width="100%" height="560px" data-link></iframe>
             <br /><br /><br />
             <a class="back" href="/posts" data-link>Go Back</a>
         </div>
@@ -23,7 +23,7 @@ export default class extends AbstractView {
         <div class="maintext">
             <h1>Posts</h1>
             <p>Welcome to Xlent Academy!</p>
-            <iframe class="posts" src="https://xlentacademy.blogspot.com" width="100%" height="400px" data-link></iframe>
+            <iframe class="posts" src="https://xlentacademy.blogspot.com" width="100%" height="560px" data-link></iframe>
             <br /><br /><br />
             <a class="back" href="/posts" data-link>Go Back</a>
         </div>

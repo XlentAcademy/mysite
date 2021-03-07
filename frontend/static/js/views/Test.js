@@ -10,7 +10,8 @@ export default class extends AbstractView {
         return `
     <div class="maintext">
         <p>Welcome to Xlent Academy!</p>
-        <iframe class="pdfsh" src="/static/test.pdf" width="100%" height="700px" data-link> </iframe>
+        <!-- <embed class="pdfsh" src="/static/test.pdf" width="100%" height="700px" data-link> </embed> -->
+        <object class="pdfsh" data="/static/test.pdf" type="application/pdf" width="100%" height="700px" data-link>
     </div>
         `;
     }

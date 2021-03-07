@@ -121,10 +121,6 @@
         <img src="/static/loader.gif" alt="Loading..." />
     </div>
     <script type="text/javascript">
-        window.addEventListener("load", function() {
-            const loader = document.querySelector(".loader");
-            loader.className += " hidden"; // class "loader hidden"
-        });
     </script>
     <div class="header">
         <h1>Xlent Academy</h1>
@@ -132,11 +128,19 @@
     </div>
 
     <div id="navbar">
-        <a class="active" href="/" data-link>Home</a>
-        <a href="/posts" data-link>Posts</a>
-        <a href="/test" data-link>Test</a>
+        <a onclick="gototop()" class="active" href="/" data-link>Home</a>
+        <a onclick="gototop()" href="/posts" data-link>Posts</a>
+        <a onclick="gototop()" href="/test" data-link>Test</a>
     </div>
     <script>
+    </script>
+    <script>
+        // Html, body Loader
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // class "loader hidden"
+        });
+        // Nav Bar Scroll
         window.onscroll = function() {
             myFunction()
         };
@@ -151,12 +155,11 @@
                 navbar.classList.remove("sticky");
             }
         }
-    </script>
-    <script>
+        // Page Loader
         var myVar;
 
         function timeout() {
-            myVar = setTimeout(showPage, 3000);
+            myVar = setTimeout(showPage, 1000);
         }
 
         function showPage() {
@@ -166,6 +169,11 @@
             setTimeout(function() {
                 loader.className = " "; // class "animate-bottom" to class " "
             }, 1000);
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function gototop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
     <br /><br /><br /><br /><br /><br /><br /><br />

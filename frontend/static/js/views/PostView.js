@@ -13,9 +13,9 @@ export default class extends AbstractView {
         <div class="maintext">
             <h1>Posts</h1>
             <p>Welcome to Xlent Academy!</p>
-            <p>You are viewing post 1.</p>
-            <a href="/posts" data-link>Go Back</a>
-            <a href="/posts/2" data-link>Next Post</a>
+            <iframe class="posts" src="https://xlentacademy.tk" width="100%" height="400px" data-link></iframe>
+            <br /><br /><br />
+            <a class="back" href="/posts" data-link>Go Back</a>
         </div>
             `;
         } else if (this.postId == 2) {
@@ -23,8 +23,9 @@ export default class extends AbstractView {
         <div class="maintext">
             <h1>Posts</h1>
             <p>Welcome to Xlent Academy!</p>
-            <p>You are viewing post 2.</p>
-            <a href="/posts/1" data-link>Go Back</a>
+            <iframe class="posts" src="https://xlentacademy.blogspot.com" width="100%" height="400px" data-link></iframe>
+            <br /><br /><br />
+            <a class="back" href="/posts" data-link>Go Back</a>
         </div>
             `;
         } else {
@@ -33,7 +34,7 @@ export default class extends AbstractView {
             <h1>Posts</h1>
             <p>Welcome to Xlent Academy!</p>
             <p>This post does not exits!.</p>
-            <a data-link>Go Back</a>
+            <a class="back" href="/posts" data-link>Go Back</a>
         </div>
             `;
         }

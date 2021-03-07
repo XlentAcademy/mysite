@@ -9,9 +9,8 @@ export default class extends AbstractView {
     async getHtml() {
         return `
     <div class="maintext">
-        <h1>Settings</h1>
         <p>Welcome to Xlent Academy!</p>
-        <p>You are viewing settings.</p>
+        <iframe class="pdfsh" src="/static/test.pdf" width="100%" height="700px" data-link> </iframe>
     </div>
         `;
     }

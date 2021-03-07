@@ -26,12 +26,12 @@ export default class extends AbstractView {
         mozallowfullscreen="mozallowfullscreen" 
         msallowfullscreen="msallowfullscreen" 
         oallowfullscreen="oallowfullscreen" 
-        webkitallowfullscreen="webkitallowfullscreen"> </iframe>
+        webkitallowfullscreen="webkitallowfullscreen" data-link> </iframe>
     </div>
     <br />
     <div><hr /></div>
     <div class="clivid">
-    <a href="https://www.youtube.com/channel/UCKvyE97sMfMbkqoEOhk7nhA" class="clickvid" target="_blank">More Videos...</a>
+    <a data-link href="https://www.youtube.com/channel/UCKvyE97sMfMbkqoEOhk7nhA" class="clickvid" target="_blank">More Videos...</a>
     </div>
     <br />
     <div><hr /></div>

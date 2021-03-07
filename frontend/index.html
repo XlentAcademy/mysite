@@ -117,6 +117,9 @@
 </head>
 
 <body>
+    <div class="loader">
+        <img src="/static/loader.gif" alt="Loading..." />
+    </div>
     <script type="text/javascript">
         window.addEventListener("load", function() {
             const loader = document.querySelector(".loader");
@@ -161,7 +164,7 @@
             document.getElementById("myDiv").style.display = "block";
             const loader = document.querySelector(".animate-bottom");
             setTimeout(function() {
-                loader.className = ""; // class "animate-bottom" to class " "
+                loader.className = " "; // class "animate-bottom" to class " "
             }, 1000);
         }
     </script>

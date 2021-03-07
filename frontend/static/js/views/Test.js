@@ -16,7 +16,9 @@ export default class extends AbstractView {
         <p>Your web browser doesn't have a PDF plugin.
         Instead you can <a href="https://xlentacademy.tk/12th_jee_1.pdf" download="xlent_test.pdf">click here to
         download the PDF file.</a></p>
-        </iframe>
+        </iframe><br /><br />
+    <a href="https://xlentacademy.tk/12th_jee_1.pdf" download="xlent_test.pdf">click here to
+    download the PDF file.</a>
     </div>
     </div>
         `;

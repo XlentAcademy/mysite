@@ -21,21 +21,21 @@ export default class extends AbstractView {
     <div><hr /></div>
     <br />
     <div class="vid">
-        <iframe src="https://www.youtube.com/embed/ng_b-8OGOTg?mute=1" 
+        <center><div id="loader"></div></center>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+        <iframe onload="timeout()" src="https://www.youtube.com/embed/ng_b-8OGOTg?mute=1" 
         allowfullscreen="allowfullscreen"
         mozallowfullscreen="mozallowfullscreen" 
         msallowfullscreen="msallowfullscreen" 
         oallowfullscreen="oallowfullscreen" 
         webkitallowfullscreen="webkitallowfullscreen" data-link> </iframe>
     </div>
+    </div>
     <br />
     <div><hr /></div>
     <div class="clivid">
     <a data-link href="https://www.youtube.com/channel/UCKvyE97sMfMbkqoEOhk7nhA" class="clickvid" target="_blank">More Videos...</a>
     </div>
-    <br />
-    <div><hr /></div>
-    <br />
         `;
     }
 }

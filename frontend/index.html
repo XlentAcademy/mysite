@@ -117,9 +117,6 @@
 </head>
 
 <body>
-    <div class="loader">
-        <img src="/static/loader.gif" alt="Loading..." />
-    </div>
     <script type="text/javascript">
         window.addEventListener("load", function() {
             const loader = document.querySelector(".loader");
@@ -150,6 +147,22 @@
             } else {
                 navbar.classList.remove("sticky");
             }
+        }
+    </script>
+    <script>
+        var myVar;
+
+        function timeout() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            const loader = document.querySelector(".animate-bottom");
+            setTimeout(function() {
+                loader.className = ""; // class "animate-bottom" to class " "
+            }, 1000);
         }
     </script>
     <br /><br /><br /><br /><br /><br /><br /><br />

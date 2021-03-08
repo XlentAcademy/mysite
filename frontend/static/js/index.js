@@ -3,6 +3,7 @@ import Posts from "./views/Posts.js";
 import PostView from "./views/PostView.js";
 import Test from "./views/Test.js";
 import Testfull from "./views/testfull.js";
+import login from "/php/index.php";
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
@@ -26,7 +27,8 @@ const router = async() => {
         { path: "/posts", view: Posts },
         { path: "/posts/:id", view: PostView },
         { path: "/test", view: Test },
-        { path: "/uploads/default/tests/0000256pdffullview/", view: Testfull }
+        { path: "/uploads/default/tests/0000256pdffullview/", view: Testfull },
+        { path: "/login", view: login }
     ];
 
     // Test each route for potential match

@@ -8,7 +8,7 @@ export default class extends AbstractView {
 
     async getHtml() {
         return `
-    <div class="maintext">
+    <div style="text-align: center;" class="maintext">
         <h1>Posts</h1>
         <p>Welcome to Xlent Academy!</p>
         <p>You are viewing posts.</p>

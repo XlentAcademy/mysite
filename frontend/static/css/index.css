@@ -21,6 +21,24 @@ html {
     /* Optional: just make scrollbar invisible */
 }
 
+.updates {
+    text-align: center;
+    background-color: #069370;
+    opacity: 0.8;
+}
+
+.updates h1 {
+    font-size: 40px;
+    color: black;
+    background-color: dimgray;
+}
+
+.updates li {
+    text-align: left;
+    font-size: 30px;
+    opacity: 1;
+}
+
 
 /* Dashboard Attr */
 
@@ -269,7 +287,7 @@ hr {
 .maintext {
     color: #777;
     background-color: white;
-    text-align: center;
+    /* text-align: center; */
     padding: 50px 80px;
 }
 
@@ -280,6 +298,14 @@ hr {
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
     color: #111;
+}
+
+.maintext h2 {
+    letter-spacing: 0.2px;
+    padding-left: 10px;
+    color: silver;
+    font-weight: bold;
+    background-color: #222;
 }
 
 .maintext p {
@@ -293,6 +319,10 @@ hr {
 .maintext object p {
     color: grey;
     font-size: 20px;
+}
+
+.maintext a {
+    color: #00acee;
 }
 
 .posts {

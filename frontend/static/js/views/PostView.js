@@ -17,6 +17,8 @@ export default class extends AbstractView {
                 <p>Welcome to Xlent Academy!</p>
                 <iframe onload="timeout()" class="posts" src="https://xlentacademy.tk" width="100%" height="560px" data-link></iframe>
                 <br /><br /><br />
+                <a style="text-decoration: none;" href="https://xlentacademy.tk" target="_blank">Show in Your Browser</a>
+                <br /><br /><br />
                 <a onclick="gototop()" class="back" href="/posts" data-link>Go Back</a>
             </div>
         </div>
@@ -29,6 +31,8 @@ export default class extends AbstractView {
                 <h1>Posts</h1>
                 <p>Welcome to Xlent Academy!</p>
                 <iframe onload="timeout()" class="posts" src="https://xlentacademy.blogspot.com" width="100%" height="560px" data-link></iframe>
+                <br /><br /><br />
+                <a style="text-decoration: none;" href="https://xlentacademy.blogspot.com/" target="_blank">Show in Your Browser</a>
                 <br /><br /><br />
                 <a onclick="gototop()" class="back" href="/posts" data-link>Go Back</a>
             </div>

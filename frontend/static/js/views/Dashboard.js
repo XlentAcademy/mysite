@@ -18,7 +18,7 @@ export default class extends AbstractView {
     <h1 class="maintitle"><span>Xlent</span> <u>Academy</u></h1>
     </div>
     <br />
-    <div><hr /></div>
+    <div><hr class="vidhr" /></div>
     <br />
     <div class="vid">
         <center><div id="loader"></div></center>
@@ -32,7 +32,7 @@ export default class extends AbstractView {
     </div>
     </div>
     <br />
-    <div><hr /></div>
+    <div><hr class="vidhr" /></div>
     <div class="clivid">
     <a data-link href="https://www.youtube.com/channel/UCKvyE97sMfMbkqoEOhk7nhA" class="clickvid" target="_blank">More Videos...</a>
     </div>

@@ -19,7 +19,7 @@ export default class extends AbstractView {
         <p>Your web browser doesn't have a PDF plugin.
         Instead you can</p>
         </object><br /><br /><br />
-    <a href="/static/test.pdf" download="xlent_test.pdf">click here to
+    <a href="/static/components/study/test.pdf" download="xlent_test.pdf">click here to
     download the PDF file.</a>
     </div>
     </div>

@@ -8,7 +8,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: url(/static/bg.jpg);
+    background: url(/static/components/images/bg.jpg);
     background-size: 96.9%;
     background-attachment: fixed;
     scroll-behavior: smooth;
@@ -20,26 +20,6 @@ html {
     background: transparent;
     /* Optional: just make scrollbar invisible */
 }
-
-.updates {
-    text-align: center;
-    background-color: #069370;
-    opacity: 0.8;
-}
-
-.updates h1 {
-    font-size: 40px;
-    color: black;
-    background-color: dimgray;
-}
-
-.updates li {
-    text-align: left;
-    font-size: 30px;
-    opacity: 1;
-}
-
-
 /* Dashboard Attr */
 
 .mt {
@@ -73,7 +53,7 @@ html {
     text-align: center;
 }
 
-hr {
+.vidhr {
     background-color: #30110D;
     color: #30110D;
     width: 700px;

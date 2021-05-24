@@ -23,7 +23,7 @@ export default class extends AbstractView {
     <div class="vid">
         <center><div id="loader"></div></center>
         <div style="display:none;" id="myDiv" class="animate-bottom">
-        <iframe onload="timeout()" src="https://www.youtube.com/embed/ng_b-8OGOTg?mute=1" 
+        <iframe onload="timeout()" src="https://www.youtube.com/embed/ng_b-8OGOTg" 
         allowfullscreen="allowfullscreen"
         mozallowfullscreen="mozallowfullscreen" 
         msallowfullscreen="msallowfullscreen" 

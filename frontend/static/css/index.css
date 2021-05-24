@@ -68,6 +68,10 @@ html {
 }
 
 @media (max-width: 768px) {
+    .vidhr {
+        max-width: 80%;
+        width: auto;
+    }
     .vid iframe {
         width: auto;
         height: auto;
